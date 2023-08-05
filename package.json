@@ -8,7 +8,7 @@
 		"copyassets:windows": "(robocopy .\\assets\\ .\\dist\\dist\\mod\\ /s /e) ^& IF %ERRORLEVEL% LSS 8 SET ERRORLEVEL = 0",
 		"copytoteardown:windows": "(robocopy .\\dist\\dist\\mod\\ %USERPROFILE%\\Documents\\Teardown\\mods\\tstl-mod /s /e) ^& IF %ERRORLEVEL% LSS 8 SET ERRORLEVEL = 0",
 		"link:windows": "npm run copyinfo:windows && npm run copyassets:windows && npm run copytoteardown:windows",
-		"compile:windows": "npm run build && npm run link:windows",
+		"compile:windows": "npm run build && npm run link:windows"
 	},
 	"devDependencies": {
 		"prettier": "^3.0.1",
