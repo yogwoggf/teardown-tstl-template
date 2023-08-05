@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": [
+			"ESNext"
+		],
+		"moduleResolution": "Node",
+		"types": ["@typescript-to-lua/language-extensions"],
+		"typeRoots": [
+			"./teardown-ts-gen"
+		],
+		"strict": true,
+
+		"rootDir": "./src",
+		"outDir": "./dist"
+	},
+	"tstl": {
+		"luaTarget": "5.1",
+		"luaBundle": "./dist/mod/main.lua",
+		"luaBundleEntry": "./src/index.ts",
+		"luaLibImport": "inline"
+	}
+}

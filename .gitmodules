@@ -1,0 +1,4 @@
+[submodule "teardown-ts-gen"]
+	path = teardown-ts-gen
+	url = https://github.com/yogwoggf/teardown-ts-gen
+	branch = decgen

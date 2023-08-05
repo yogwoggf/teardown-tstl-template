@@ -1,0 +1,17 @@
+{
+	"name": "teardown-tstl-template",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "tstl",
+		"copyinfo:windows": "copy .\\info.txt .\\dist\\dist\\mod\\info.txt",
+		"copyassets:windows": "(robocopy .\\assets\\ .\\dist\\dist\\mod\\ /s /e) ^& IF %ERRORLEVEL% LSS 8 SET ERRORLEVEL = 0",
+		"copytoteardown:windows": "(robocopy .\\dist\\dist\\mod\\ %USERPROFILE%\\Documents\\Teardown\\mods\\tstl-mod /s /e) ^& IF %ERRORLEVEL% LSS 8 SET ERRORLEVEL = 0",
+		"link:windows": "npm run copyinfo:windows && npm run copyassets:windows && npm run copytoteardown:windows"
+	},
+	"devDependencies": {
+		"prettier": "^3.0.1",
+		"typescript": "^5.1.6",
+		"typescript-to-lua": "^1.17.0"
+	}
+}
