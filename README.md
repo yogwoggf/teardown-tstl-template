@@ -14,6 +14,6 @@ This template enables TypeScript support for mods in Teardown. The TypeScript is
 ## How to compile
 
 1. Go into `package.json` and customize the scripts to your liking (such as changing the folder name it copies to)
-2. Run `npm run compile` to build the mod, compile it all together, and then finally copy it to your Teardown `mods` directory (windows only)
+2. Run `npm run compile:windows` to build the mod, compile it all together, and then finally copy it to your Teardown `mods` directory (windows only)
 
 You can delete all of the example files in `src/` and `assets/` if you want, they're just there to show you how it works.
