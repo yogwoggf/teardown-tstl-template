@@ -2,15 +2,13 @@
 	"$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
 	"compilerOptions": {
 		"target": "ESNext",
-		"lib": [
-			"ESNext"
-		],
+		"lib": ["ESNext"],
 		"moduleResolution": "Node",
 		"types": ["@typescript-to-lua/language-extensions"],
-		"typeRoots": [
-			"./teardown-ts-gen"
-		],
+		"typeRoots": ["./teardown-ts-gen"],
+
 		"strict": true,
+		"skipLibCheck": true,
 
 		"rootDir": "./src",
 		"outDir": "./dist"
